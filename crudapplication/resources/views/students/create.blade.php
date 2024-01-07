@@ -2,11 +2,11 @@
 @section('content')
  
 <div class="card">
-  <div class="card-header">Students Page</div>
+  <div class="card-header" style="text-align: center">Students Page</div>
   <div class="card-body">
       
       <form action="{{ url('student') }}" method="post">
-        {!! csrf_field() !!}
+        @csrf
         <label>Name</label> <br>
         <input type="text" name="name" id="name" class="form-control"><br>
         <label>Address</label><br>
